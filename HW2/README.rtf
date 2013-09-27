@@ -1,0 +1,17 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf390
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 How to compile:\
+1. place the Makefile and SImpleShell.c in the same directory.\
+2. Open terminal or command line prompt and cd into the directory where\
+you stored the files.\
+3. Once in the correct directory type in the command: " make ", and hit enter.\
+4. Now the the program is compiled type the command ./SimpleShell and hit enter\
+5. The program should now be running\
+\
+What the program does:\
+The program is a simple shell that was written in c and takes the users command and parses the command from the argument.  The command and the argument are stored into and array and are referenced by the execvp() function to be executed.  The shell forks into a child and a parent process which the child executes the command and the parent waits until the child is finished until it can continue again.  The shell is a giant while loop which will continue to ask for commands until the user enters the command "exit" and the program will terminate.\
+}
