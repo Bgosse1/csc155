@@ -27,7 +27,7 @@ int main(void)
     		cmd = strtok (NULL, " ");
     	
   		}
-  		if((args[0], "exit")==0){
+  		if((cmd, "exit")==0){
   			exit(0);
   		}
        	
@@ -36,7 +36,7 @@ int main(void)
         if ((pid = fork()) < 0) {
             perror("fork");
         } else if (pid == 0) {  /* child */
-            execvp(args[0], args);
+            execvp(cmd, &cmd);
             perror("Some sort of exec error");
             //execlp(buf, buf, (char *)0);
             printf("Couldn't execute: %s", buf);
