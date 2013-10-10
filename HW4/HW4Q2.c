@@ -18,6 +18,8 @@ main(int argc, char *argv[])
 			printf("argv[2]=    %s \n", argv[2]);
 			printf("argv[3]=    %s \n", argv[2]);
 			printf("Last file modification:   %s", ctime(&sb.st_mtime));			
+			printf("test2:   %s", ctime(&sb.st_mtime));
+
 			//printf("stat test:	%s\n", stat(argv[1], &sb));
 			if (stat(argv[i], &sb) < 0)
 		        	return(1);
