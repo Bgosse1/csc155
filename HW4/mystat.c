@@ -21,6 +21,7 @@ int main(int argc, char *argv[]){
 	//t = mktime(&stuff);
 	//printf("seconds since the Epoch: %ld\n", (long) t);
 	//printf("year: %d, month: %d, day: %d \n", stuff.tm_year+1900, stuff.tm_mon, stuff.tm_mday);
+	if(argc == 4){
 	for (i = 1; i < argc; i++){
 		printf("%s: was Modified on: %s", argv[i], ctime(&filestat.st_mtime));
 		strptime(ctime(&filestat.st_mtime), "%a %b %d %H:%M:%S %Y", &stuff);
@@ -39,6 +40,8 @@ int main(int argc, char *argv[]){
 		//printf(temp);
 		//printf("%s is the file with the most recent date \n", temp);
 	}
+
+	}		
 		//printf(temp);
 		//printf("%s is the file with the most recent date \n", temp);
 	//printf("The file that was last modified is:	%s", temp);
